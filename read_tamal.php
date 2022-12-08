@@ -68,7 +68,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>View Record</title>
+    <title>Ver detalles de una llanta</title>
     <link rel="stylesheet" href="bootstrap337/css/bootstrap.css">
     <style type="text/css">
         .wrapper{
@@ -83,18 +83,18 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>View Record</h1>
+                        <h1>Detalles de la venta realizada</h1>
                     </div>
                     <div class="form-group">
-                        <label>Sabor del tamal</label>
+                        <label> Detalles de la llanta</label>
                         <p class="form-control-static"><?php echo $row["sabortamal"]; ?></p>
                     </div>
                     <div class="form-group">
-                        <label>Tipo hoja</label>
+                        <label>Marca</label>
                         <p class="form-control-static"><?php echo $row["tipohoja"]; ?></p>
                     </div>
                     <div class="form-group">
-                        <label>Cantidad </label>
+                        <label>Cantidad vendidas</label>
                         <p class="form-control-static"><?php echo $row["cantidad"]; ?></p>
                     </div>
                     <div class="form-group">
@@ -105,7 +105,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
                         <label>Tamaño</label>
                         <p class="form-control-static"><?php echo $row["tamanio"]; ?></p>
                     </div>
-                    <p><a href="crud_tamales.php" class="btn btn-primary">Back</a></p>
+                    <p><a href="crud_tamales.php" class="btn btn-primary">Salir</a></p>
                 </div>
             </div>        
         </div>

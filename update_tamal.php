@@ -153,11 +153,11 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 }
 ?>
  
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Update Record</title>
+    <title>Actualizar pedido</title>
     <link rel="stylesheet" href="bootstrap337/css/bootstrap.css">
     <style type="text/css">
         .wrapper{
@@ -172,17 +172,17 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2>Editar tamales</h2>
+                        <h2>Modificar una venta</h2>
                     </div>
-                    <p>or favor, edite los valores de los tamales.</p>
+                    
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group <?php echo (!empty($sabortamal_err)) ? 'has-error' : ''; ?>">
-                            <label>sabortamal</label>
+                            <label>Detalles</label>
                             <input type="text" name="sabortamal" class="form-control" value="<?php echo $sabortamal; ?>">
                             <span class="help-block"><?php echo $sabortamal_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($tipohoja_err)) ? 'has-error' : ''; ?>">
-                            <label>tipohoja</label>
+                            <label>Marca</label>
                             <input type="text" name="tipohoja" class="form-control" value="<?php echo $tipohoja; ?>">
                             <span class="help-block"><?php echo $tipohoja_err;?></span>
                         </div>
@@ -197,7 +197,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                             <span class="help-block"><?php echo $precio_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($tamanio_err)) ? 'has-error' : ''; ?>">
-                            <label>tamanio</label>
+                            <label>tamaño</label>
                             <input type="text" name="tamanio" class="form-control" value="<?php echo $tamanio; ?>">
                             <span class="help-block"><?php echo $tamanio_err;?></span>
                         </div>
@@ -209,7 +209,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                         
                         <input type="hidden" name="id" value="<?php echo $id; ?>"/>
                         <input type="submit" class="btn btn-primary" value="Submit">
-                        <a href="crud_tamales.php" class="btn btn-default">Cancel</a>
+                        <a href="crud_tamales.php" class="btn btn-default">Salir</a>
                     </form>
                 </div>
             </div>        
