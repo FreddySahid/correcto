@@ -22,7 +22,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Crud llantas</title>
     <link rel="stylesheet" href="bootstrap337/css/bootstrap.css">
     <script src="bootstrap337/js/jqueryv1.12.4.min.js"></script>
     <script src="bootstrap337/js/bootstrap.js"></script>
