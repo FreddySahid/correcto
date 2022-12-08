@@ -106,11 +106,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
  
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agregar tamalillo</title>
+    <title>Agregar llantas</title>
     <link rel="stylesheet" href="bootstrap337/css/bootstrap.css">
     <style type="text/css">
         .wrapper{
@@ -125,27 +125,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2>Agregar tamalito</h2>
+                        <h2>Registrar venta</h2>
                     </div>
-                    <p>Por favor agrega la orden de los tamales</p>
+                    <p>Por favor agrega una descripcion de la nueva venta</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group <?php echo (!empty($sabortamal_err)) ? 'has-error' : ''; ?>">
-                            <label>Tamal</label>
+                            <label>Detalles</label>
                             <input type="text" name="sabortamal" class="form-control" value="<?php echo $sabortamal; ?>">
                             <span class="help-block"><?php echo $sabortamal_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($tipohoja_err)) ? 'has-error' : ''; ?>">
-                            <label>Tipo de hoja </label>
+                            <label>Marca </label>
                             <textarea name="tipohoja" class="form-control"><?php echo $tipohoja; ?></textarea>
                             <span class="help-block"><?php echo $tipohoja_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($cantidad_err)) ? 'has-error' : ''; ?>">
-                            <label>Cantidad de tamalitos</label>
+                            <label>Cantidad de llantas a vender</label>
                             <input type="text" name="cantidad" class="form-control" value="<?php echo $cantidad; ?>">
                             <span class="help-block"><?php echo $cantidad_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($precio_err)) ? 'has-error' : ''; ?>">
-                            <label>Precio de tamalitos</label>
+                            <label>Precio unitario</label>
                             <input type="text" name="precio" class="form-control" value="<?php echo $precio; ?>">
                             <span class="help-block"><?php echo $precio_err;?></span>
                         </div>
