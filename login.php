@@ -105,7 +105,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="mb-md-5 mt-md-4 pb-5">
 
             <h2>Iniciar sesión</h2>
-             <p>Llantas Max</p>
+             <p>Denfratec</p>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                         <label for="formGroupExampleInput" class="form-label">Nombre de usuario</label>

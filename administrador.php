@@ -41,7 +41,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-        <a href="crud_tamales.php" class="nav-link">Ir a realizar venta</a>
+        <a href="crud_tamales.php" class="nav-link">Ir a registrar empleados</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">En construcción/ no disponible</a>

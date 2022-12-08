@@ -42,7 +42,7 @@ if(isset($_POST['username'])){
                             <div class="mb-md-5 mt-md-4 pb-5">
 
                                 <h2>Iniciar sesión</h2>
-                                <p>Llantas Max</p>
+                                <p>Denfratec</p>
 
                                 <form action="login_copy.php" method="post" autocomplete="off">
                                     <div class="form-group">

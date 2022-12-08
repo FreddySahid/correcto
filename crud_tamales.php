@@ -22,7 +22,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crud llantas</title>
+    <title>Crud empleados</title>
     <link rel="stylesheet" href="bootstrap337/css/bootstrap.css">
     <script src="bootstrap337/js/jqueryv1.12.4.min.js"></script>
     <script src="bootstrap337/js/bootstrap.js"></script>
@@ -50,8 +50,8 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">Detalles de las Llantas</h2>
-                        <a href="create.php" class="btn btn-success pull-right">Agregar un nuevo pedido</a>
+                        <h2 class="pull-left">Lista de todos los empleados</h2>
+                        <a href="create.php" class="btn btn-success pull-right">Registrar nuevo empleado</a>
                        
                     </div>
                     <?php
@@ -104,7 +104,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                     // Close connection
                     mysqli_close($mysqli);
                     ?>
-                      <a href="logout.php" class="btn btn-danger">Salir sesion</a>
+                      <a href="logout.php" class="btn btn-danger">Cerrar sesion</a>
      
                 </div>
             </div>        
