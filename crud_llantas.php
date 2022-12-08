@@ -50,8 +50,8 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">Detalles de los tamales</h2>
-                        <a href="create.php" class="btn btn-success pull-right">Agregar una nueva orden</a>
+                        <h2 class="pull-left">Detalles de las Llantas</h2>
+                        <a href="create.php" class="btn btn-success pull-right">Agregar un nuevo pedido</a>
                        
                     </div>
                     <?php
@@ -66,8 +66,8 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                 echo "<thead>";
                                     echo "<tr>";
                                         echo "<th>#</th>";
-                                        echo "<th>Sabor tamal</th>";
-                                        echo "<th>Tipo de hoja</th>";
+                                        echo "<th>Detalles de la llanta</th>";
+                                        echo "<th>Marca</th>";
                                         echo "<th>Cantidad</th>";
                                         echo "<th>Precio</th>";
                                         echo "<th>Tamaño</th>";
