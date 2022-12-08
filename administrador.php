@@ -34,7 +34,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
     <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Bienvenido<b><?php echo htmlspecialchars($_SESSION['username']); ?></b>. a Llantas Max. Tu usuario es de tipo <b><?php echo htmlspecialchars($_SESSION['usertype']); ?></b></a>
+    <a class="navbar-brand" href="#">Bienvenido<b><?php echo htmlspecialchars($_SESSION['username']); ?></b>. a Denfratec. Tu usuario es de tipo <b><?php echo htmlspecialchars($_SESSION['usertype']); ?></b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
