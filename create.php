@@ -110,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agregar llantas</title>
+    <title>Agregar Empleado</title>
     <link rel="stylesheet" href="bootstrap337/css/bootstrap.css">
     <style type="text/css">
         .wrapper{

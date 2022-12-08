@@ -66,11 +66,11 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                 echo "<thead>";
                                     echo "<tr>";
                                         echo "<th>#</th>";
-                                        echo "<th>Detalles de la llanta</th>";
-                                        echo "<th>Marca</th>";
-                                        echo "<th>Cantidad</th>";
-                                        echo "<th>Precio</th>";
-                                        echo "<th>Tamaño</th>";
+                                        echo "<th>Nombre completo</th>";
+                                        echo "<th>Dirección</th>";
+                                        echo "<th>Edad</th>";
+                                        echo "<th>Telefono</th>";
+                                        echo "<th>Contraseña</th>";
                                         echo "<th>Opciones</th>";
                                     echo "</tr>";
                                 echo "</thead>";
@@ -84,9 +84,9 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                          echo "<td>" . $row['precio'] . "</td>";
                                         echo "<td>" . $row['tamanio'] . "</td>"; 
                                         echo "<td>";
-                                            echo "<a href='read_tamal.php?id=". $row['id'] ."' title='Ver tamal ' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
-                                            echo "<a href='update_tamal.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
-                                            echo "<a href='delete.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
+                                            echo "<a href='read_tamal.php?id=". $row['id'] ."' title='Ver detalles ' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
+                                            echo "<a href='update_tamal.php?id=". $row['id'] ."' title='Editar empleado' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
+                                            echo "<a href='delete.php?id=". $row['id'] ."' title='Eliminar empleado' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
                                         echo "</td>";
                                     echo "</tr>";
                                 }
