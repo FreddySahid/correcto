@@ -130,12 +130,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <p>Por favor agrega los datos de un nuevo empleado</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group <?php echo (!empty($sabortamal_err)) ? 'has-error' : ''; ?>">
-                            <label>Nombre completo</label>
+                            <label>Nombre</label>
                             <input type="text" name="sabortamal" class="form-control" value="<?php echo $sabortamal; ?>">
                             <span class="help-block"><?php echo $sabortamal_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($tipohoja_err)) ? 'has-error' : ''; ?>">
-                            <label>Direccion </label>
+                            <label>Dirección </label>
                             <textarea name="tipohoja" class="form-control"><?php echo $tipohoja; ?></textarea>
                             <span class="help-block"><?php echo $tipohoja_err;?></span>
                         </div>
@@ -145,16 +145,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <span class="help-block"><?php echo $cantidad_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($precio_err)) ? 'has-error' : ''; ?>">
-                            <label>Telefono</label>
+                            <label>Teléfono</label>
                             <input type="text" name="precio" class="form-control" value="<?php echo $precio; ?>">
                             <span class="help-block"><?php echo $precio_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($tamanio_err)) ? 'has-error' : ''; ?>">
                             <label>Contraseña </label>
-                            <input type="text" name="tamanio" class="form-control" value="<?php echo $tamanio; ?>">
+                            <input type="password" name="tamanio" class="form-control" value="<?php echo $tamanio; ?>">
                             <span class="help-block"><?php echo $tamanio_err;?></span>
                         </div>
-                        <input type="submit" class="btn btn-primary" value="Submit"> 
+                        <input type="submit" class="btn btn-primary" value="Guardar"> 
                         <a href="crud_tamales.php" class="btn btn-default">Cancelar</a>
                     </form>
                 </div>

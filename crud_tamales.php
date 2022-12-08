@@ -66,10 +66,10 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                 echo "<thead>";
                                     echo "<tr>";
                                         echo "<th>#</th>";
-                                        echo "<th>Nombre completo</th>";
+                                        echo "<th>Nombre</th>";
                                         echo "<th>Dirección</th>";
                                         echo "<th>Edad</th>";
-                                        echo "<th>Telefono</th>";
+                                        echo "<th>Teléfono</th>";
                                         echo "<th>Contraseña</th>";
                                         echo "<th>Opciones</th>";
                                     echo "</tr>";

@@ -172,33 +172,33 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2>Modificar una venta</h2>
+                        <h2>Modificar datos de un empleado</h2>
                     </div>
                     
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group <?php echo (!empty($sabortamal_err)) ? 'has-error' : ''; ?>">
-                            <label>Detalles</label>
+                            <label>Nombre</label>
                             <input type="text" name="sabortamal" class="form-control" value="<?php echo $sabortamal; ?>">
                             <span class="help-block"><?php echo $sabortamal_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($tipohoja_err)) ? 'has-error' : ''; ?>">
-                            <label>Marca</label>
+                            <label>Dirección</label>
                             <input type="text" name="tipohoja" class="form-control" value="<?php echo $tipohoja; ?>">
                             <span class="help-block"><?php echo $tipohoja_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($cantidad_err)) ? 'has-error' : ''; ?>">
-                            <label>cantidad</label>
+                            <label>Edad</label>
                             <input type="text" name="cantidad" class="form-control" value="<?php echo $cantidad; ?>">
                             <span class="help-block"><?php echo $cantidad_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($precio_err)) ? 'has-error' : ''; ?>">
-                            <label>Precio </label>
+                            <label>Teléfono </label>
                             <input type="text" name="precio" class="form-control" value="<?php echo $precio; ?>">
                             <span class="help-block"><?php echo $precio_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($tamanio_err)) ? 'has-error' : ''; ?>">
-                            <label>tamaño</label>
-                            <input type="text" name="tamanio" class="form-control" value="<?php echo $tamanio; ?>">
+                            <label>Contraseña</label>
+                            <input type="password" name="tamanio" class="form-control" value="<?php echo $tamanio; ?>">
                             <span class="help-block"><?php echo $tamanio_err;?></span>
                         </div>
                         
